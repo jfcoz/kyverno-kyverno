@@ -27,6 +27,7 @@ jobs:
       cleanup-controller-digest: ${{ steps.publish-cleanup-controller.outputs.digest }}
       cli-digest: ${{ steps.publish-cli.outputs.digest }}
       reports-controller-digest: ${{ steps.publish-reports-controller.outputs.digest }}
+      readiness-checker-digest: ${{ steps.publish-readiness-checker.outputs.digest }}
     steps:
       - name: Checkout
         uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
